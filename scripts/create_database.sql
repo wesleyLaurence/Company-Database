@@ -64,7 +64,7 @@ CREATE TABLE sales (
     CONSTRAINT FK_employee_id FOREIGN KEY (employee_ID) REFERENCES employees(employee_ID) ON DELETE CASCADE );
     
 
-# insert data into database
+# insert data into tables
 INSERT INTO employees (first_name, last_name, store_ID, hire_date, email, phone, DOB, gender) VALUES ('Brakshaw','Hemmingway', 3, '2020-01-21', 'b.h@home.com','123-456-7891','1974-01-21','M');
 INSERT INTO employees (first_name, last_name, store_ID, hire_date, email, phone, DOB, gender) VALUES ('Tela','Vidia', 5, '2020-01-21', 't.v@home.com','234-567-8910','1987-04-24','M');
 INSERT INTO employees (first_name, last_name, store_ID, hire_date, email, phone, DOB, gender) VALUES ('Meros','Blecken', 1, '2020-01-21', 'm.b@home.com','747-999-1111','1969-04-04','F');
