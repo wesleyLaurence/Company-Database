@@ -39,7 +39,7 @@ CREATE TABLE Customers (
 
 
 CREATE TABLE Category (
-	CategoryID 			CHAR(4) NOT NULL,
+    CategoryID 			        CHAR(4) NOT NULL,
     CategoryName 			VARCHAR(100),
     Description 			VARCHAR(250),
     Picture				VARCHAR(250),
@@ -49,7 +49,7 @@ CREATE TABLE Category (
 
 
 CREATE TABLE Shippers (
-	ShipperID 			CHAR(4) NOT NULL,
+    ShipperID 			        CHAR(4) NOT NULL,
     CompanyName 			VARCHAR(100),
     Phone 				CHAR(13),
     CONSTRAINT PK_ShipperID PRIMARY KEY (ShipperID)
@@ -57,7 +57,7 @@ CREATE TABLE Shippers (
 
 
 CREATE TABLE Suppliers (
-	SupplierID 			CHAR(4) NOT NULL,
+    SupplierID 			        CHAR(4) NOT NULL,
     CompanyName 			VARCHAR(255) NOT NULL,
     ContactFName 			VARCHAR(255) NOT NULL,
     ContactLName 			VARCHAR(255) NOT NULL,
@@ -87,7 +87,7 @@ CREATE TABLE Suppliers (
 
 
 CREATE TABLE Products (
-	ProductID 			CHAR(4) NOT NULL,
+    ProductID 			        CHAR(4) NOT NULL,
     SKU					INTEGER,
     IDSKU				INTEGER,
     VendorProductID 			CHAR(4) NOT NULL,
@@ -120,7 +120,7 @@ CREATE TABLE Products (
 
 
 CREATE TABLE Payment (
-	PaymentID 			CHAR(4) NOT NULL,
+    PaymentID 			        CHAR(4) NOT NULL,
     PaymentType				VARCHAR(100),
     Allowed 				BOOLEAN,
     CONSTRAINT PK_PaymentID PRIMARY KEY (PaymentID)
@@ -128,7 +128,7 @@ CREATE TABLE Payment (
 
 
 CREATE TABLE Orders (
-	OrderID 			CHAR(4) NOT NULL,
+    OrderID 			        CHAR(4) NOT NULL,
     CustomerID 				CHAR(4) NOT NULL,
     OrderNumber 			INTEGER,
     PaymentID 				CHAR(4) NOT NULL,
@@ -154,11 +154,11 @@ CREATE TABLE Orders (
 
 
 CREATE TABLE OrderDetails (
-	OrderID 			CHAR(4) NOT NULL,
+    OrderID 			        CHAR(4) NOT NULL,
     ProductID 				CHAR(4) NOT NULL,
     OrderNumber 			INTEGER,
     Price 				FLOAT,
-	Quantity 			FLOAT,
+    Quantity 			        FLOAT,
     Discount 				FLOAT,
     Total 				FLOAT,
     IDSKU				INTEGER,
