@@ -1,2 +1,2 @@
 # Company-Database
-This code creates a MySQL database designed for measuring company operations. All the data contained in this project is fake.
+This repository contains code to create several MySQL databases designed for measuring company operations (all the data contained in this project is fake).
